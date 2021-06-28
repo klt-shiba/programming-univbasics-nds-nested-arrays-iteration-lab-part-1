@@ -3,4 +3,10 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
 
+  results = []
+    src.each do |array|
+      array.each do |number|
+        p number if number.even?
+      end
+    end
 end
